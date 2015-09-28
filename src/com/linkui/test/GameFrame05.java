@@ -8,7 +8,7 @@ import java.awt.event.MouseEvent;
 import java.awt.event.MouseWheelEvent;
 
 /**
- * Pool ball (move to any direction)
+ * Pool ball, ball can be hit by clicking mouse.
  * 
  * @author Linkui
  *
