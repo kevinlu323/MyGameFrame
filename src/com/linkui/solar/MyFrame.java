@@ -1,7 +1,6 @@
-package com.linkui.test;
+package com.linkui.solar;
 
 import java.awt.Frame;
-import java.awt.Image;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
 
