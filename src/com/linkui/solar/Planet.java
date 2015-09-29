@@ -6,16 +6,18 @@ import java.awt.Image;
 
 public class Planet extends Star {
 
-	// Besides image, coordinate, planet has its orbit. x^2/a^2 + y^2/b^2 = 1;
+	// Besides image, coordinate, planet has its Oval orbit. x^2/a^2 + y^2/b^2 = 1;
 	double longAxis;
 	double shortAxis;
 	double speed;
 	double degree;
 	Star center;
+	String name;
 
-	public Planet(String imgPath, double longAxis, double shortAxis, double speed, Star center) {
+	public Planet(String imgPath, double longAxis, double shortAxis, double speed, Star center, String name) {
 		super(GameUtil.getImage2(imgPath));
 		this.center = center;
+		this.name = name;
 		this.x = center.x + longAxis;
 		this.y = center.y;
 
@@ -53,6 +55,8 @@ public class Planet extends Star {
 		Color c = g.getColor();
 		g.setColor(Color.BLUE);
 		g.drawOval((int) ovalX, (int) ovalY, (int) ovalWidth, (int) ovalHeight);
+		g.setColor(Color.WHITE);
+		g.drawString(name, (int) (center.x + center.width / 2), (int) ovalY);
 		g.setColor(c);
 
 	}

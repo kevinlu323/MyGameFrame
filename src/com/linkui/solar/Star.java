@@ -2,7 +2,6 @@ package com.linkui.solar;
 
 import java.awt.Graphics;
 import java.awt.Image;
-import java.awt.image.ImageObserver;
 
 public class Star {
 	Image img;
@@ -22,8 +21,8 @@ public class Star {
 	public Star(Image img) {
 		this.img = img;
 		this.width = img.getWidth(null);
-		this.height = img.getWidth(null);
-		System.out.println("sun: " + img.getWidth(null) + img.getWidth(null));
+		this.height = img.getHeight(null);
+		//System.out.println("sun: " + img.getWidth(null) + img.getWidth(null));
 	}
 
 	public Star(Image img, double x, double y) {
