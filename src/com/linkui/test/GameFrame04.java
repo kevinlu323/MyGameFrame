@@ -17,19 +17,18 @@ public class GameFrame04 extends MyFrame { // GUI programming
 		new GameFrame04().launchFrame();
 	}
 
-
 	private double x = 100, y = 100;
 
 	private double degree = Math.PI / 3; // [0,2pi], here is 60 degree
-	
+
 	private double speed = 10;
 
 	@Override
 	public void paint(Graphics g) {
 
 		g.drawImage(img, (int) x, (int) y, null);
-		
-		if(speed > 0){
+
+		if (speed > 0) {
 			speed -= 0.05;
 		}
 

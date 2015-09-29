@@ -9,14 +9,16 @@ import javax.imageio.ImageIO;
 
 /**
  * Common tool Class (like loading images)
+ * 
  * @author Linkui
  *
  */
 public class GameUtil {
-	
-	private GameUtil(){}
-	
-	public static Image getImage(String path){
+
+	private GameUtil() {
+	}
+
+	public static Image getImage(String path) {
 		URL u = GameUtil.class.getClassLoader().getResource(path);
 		BufferedImage img = null;
 		try {
@@ -24,7 +26,7 @@ public class GameUtil {
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
-		
+
 		return img;
 	}
 }

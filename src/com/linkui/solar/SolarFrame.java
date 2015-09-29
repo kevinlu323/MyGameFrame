@@ -15,7 +15,7 @@ public class SolarFrame extends MyFrame {
 	Image bg = GameUtil.getImage("images/bg.jpg");
 
 	Star sun = new Star("images/Sun.jpg", Constant.GAME_WIDTH / 2 - 25, Constant.GAME_HEIGHT / 2 - 25);
-	Planet earth = new Planet("images/Earth.jpg", 150, 100, 0.1, sun);
+	Planet earth = new Planet("images/Earth.jpg", 150, 100, 0.05, sun);
 
 	@Override
 	public void paint(Graphics g) {

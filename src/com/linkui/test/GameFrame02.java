@@ -9,7 +9,8 @@ import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
 
 /**
- * Object move on Horizontal or Vertical direction 
+ * Object move on Horizontal or Vertical direction
+ * 
  * @author Linkui
  *
  */

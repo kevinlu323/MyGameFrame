@@ -14,7 +14,7 @@ public class Planet extends Star {
 	Star center;
 
 	public Planet(String imgPath, double longAxis, double shortAxis, double speed, Star center) {
-		super(GameUtil.getImage(imgPath));
+		super(GameUtil.getImage2(imgPath));
 		this.center = center;
 		this.x = center.x + longAxis;
 		this.y = center.y;
@@ -59,8 +59,8 @@ public class Planet extends Star {
 
 	// Move as Oval orbit
 	public void move() {
-		x = center.x + center.width / 2 + longAxis * Math.cos(degree);
-		y = center.y + center.height / 2 + shortAxis * Math.sin(degree);
+		x = (center.x + center.width / 2 + longAxis * Math.cos(degree)) - width / 2;
+		y = (center.y + center.height / 2 + shortAxis * Math.sin(degree)) - height / 2;
 
 		degree += speed;
 	}

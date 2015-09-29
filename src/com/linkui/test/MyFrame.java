@@ -5,8 +5,8 @@ import java.awt.Image;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
 
-public class MyFrame extends Frame{
-	
+public class MyFrame extends Frame {
+
 	public void launchFrame() {
 		setSize(Constant.GAME_WIDTH, Constant.GAME_HEIGHT);
 		setLocation(300, 300);
@@ -21,7 +21,7 @@ public class MyFrame extends Frame{
 			}
 		});
 	}
-	
+
 	/**
 	 * Inner Thread to repaint window.
 	 * 
